@@ -15,11 +15,11 @@ from docopt import docopt
 opt = docopt(__doc__)
 
 # define main function
-def main():
+def main(opt):
     print(opt)
     print(type(opt))
     print(opt['--arg4'])
 
 # call main function
 if __name__ == "__main__":
-    main()
+    main(opt)
